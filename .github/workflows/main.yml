@@ -22,10 +22,10 @@ jobs:
         node-version: '14'
 
     - name: Install Newman
-      run: npm install -g newman newman-reporter-html
+      run: npm install -g newman newman-reporter-html --insecure
 
     - name: Run Postman Tests
-      run: newman run collections/GitHub_API_Testing.postman_collection.json -e environments/Github_API_tests.postman_environment.json -r cli,html --reporter-html-export results/report.html
+      run: newman run collections/GitHub_API_Testing.postman_collection.json -e environments/Github_API_tests.postman_environment.json -r cli,html --reporter-html-export results/report.html --insecure
 
     - name: Upload Test Results
       uses: actions/upload-artifact@v3
