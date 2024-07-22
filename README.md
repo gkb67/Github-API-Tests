@@ -13,9 +13,9 @@ The scope of functional testing will cover the following GitHub API functionalit
 
 Required tools: Postman, npm and newman
 - Clone the project from https://github.com/gkb67/Github-API-Tests/
-- npm install
-- npm install -g newman
-- npm install -g newman-reporter-html
+- `npm install`
+- `npm install -g newman`
+- `npm install -g newman-reporter-html`
 
 **Test Cases**
 
@@ -25,22 +25,21 @@ Required tools: Postman, npm and newman
 
 **Repository Management**
 - **Positive tests**
-  - Scenario 1 – Verify that website is opened succussfully
-  - Scenario 1 – Verify that user can create Repository with valid name and description
-  - Scenario 2 – Verify that user can update repository details
-  - Scenario 3 - Verify that user can delete an existing repository.
-  - Scenario 4 - Verify that user can retrieve all available repositories
-  - Scenario 5 - Verify that user can retrieve details of an existing repository.
+  - Scenario 1 – Verify that users can create Repository with valid name and description
+  - Scenario 2 - Verify that users can retrieve all available repositories
+  - Scenario 3 - Verify that users can retrieve details of an existing repository.
+  - Scenario 4 – Verify that users can update repository details
+  - Scenario 5 - Verify that users can delete an existing repository.
  
 - **Negative tests**
-  - Scenario 1 - Verify that user cannot create a repository with an invalid data.
-  - Scenario 2 - Verify that user cannot update a non-existent repository.
+  - Scenario 1 - Verify that users cannot create a repository with invalid data.
+  - Scenario 2 - Verify that users cannot update a non-existent repository.
 
 **How to Run Tests**
 
 Test run results with Newman
 1.	Export the collection and environment from https://www.postman.com/gzd8/workspace/github-api-testing
-2.	newman run yourCollectionFile.json -e yourEnvironmentFile.json --reporters='cli,htmlextra'
+2.	Run `newman run yourCollectionFile.json -e yourEnvironmentFile.json --reporters='cli,htmlextra'`
 3.	See the results in Newman folder in your selected path
 
 ![image](https://github.com/user-attachments/assets/ad98f4ea-315d-441c-8b29-6d915a27bc7a)
