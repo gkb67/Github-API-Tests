@@ -24,10 +24,12 @@ jobs:
     - name: Install Newman
       run: npm install -g newman newman-reporter-html
 
+    - name: Update Postman Environment with GitHub Token
+      run: |
+        sed -i 's/"value": ""/"value": "${{ secrets.TOKEN }}"/' environments/Github_API_tests.postman_environment.json
+
     - name: Run Postman Tests
       run: newman run collections/GitHub_API_Testing.postman_collection.json -e environments/Github_API_tests.postman_environment.json -r cli,html --reporter-html-export results/report.html
-      env:
-        TOKEN: ${{ secrets.TOKEN }}
 
     - name: Upload Test Results
       uses: actions/upload-artifact@v3
