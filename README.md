@@ -12,7 +12,7 @@ The scope of functional testing will cover the following GitHub API functionalit
 **SET UP**
 
 Required tools: Postman, npm and newman
-Clone the project from https://github.com/gkb67/Github-API-Tests/
+- Clone the project from https://github.com/gkb67/Github-API-Tests/
 Install the dependencies:
 - npm install
 - npm install -g newman
