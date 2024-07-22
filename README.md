@@ -1,7 +1,7 @@
 ## **Functional Testing of GitHub API Tests**
 
-The scope of functional testing will cover the following:
-- CRUD Operations: Repositories in GitHub
+The scope of functional testing is as follows:
+- CRUD Operations: On repositories in GitHub
 - Authentication: Token-based authentication
 - Error Handling: Proper handling of error responses for invalid inputs and requests
 - Positive and Negative Test Cases: Validation of successful operations and failure scenarios
