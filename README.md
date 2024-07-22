@@ -9,7 +9,6 @@ The scope of functional testing will cover the following GitHub API functionalit
 **Design Pattern**
 - REST API design patterns is selected. It has resources as collections, and the HTTP methods used are GET, POST, PUT, and DELETE.
 
-
 **SET UP**
 
 Required tools: Postman, npm and newman
@@ -21,9 +20,9 @@ Install the dependencies:
 
 **Test Cases**
 
-Authentication Handling
-Scenario 1 – Verify Valid Authentication
-Scenario 2 - Verify Invalid Authentication
+**Authentication Handling**
+- Scenario 1 – Verify Valid Authentication
+- Scenario 2 - Verify Invalid Authentication
 
 **Repository Management**
 - **Positive tests**
