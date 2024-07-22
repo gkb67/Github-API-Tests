@@ -7,7 +7,7 @@ The scope of functional testing will cover the following GitHub API functionalit
 - Positive and Negative Test Cases: Validation for successful operations and failure scenarios
 
 **Design Pattern**
-- REST API design patterns is selected. It has resources as collections, and the HTTP methods used are GET, POST, PUT, and DELETE.
+- REST API design pattern is selected. It has resources as collections, and the HTTP methods used are GET, POST, PUT, and DELETE.
 
 **SET UP**
 
@@ -15,7 +15,7 @@ Required tools: Postman, npm and newman
 - Clone the project from https://github.com/gkb67/Github-API-Tests/
 - npm install
 - npm install -g newman
-- npm install -g newman-reporter-html\
+- npm install -g newman-reporter-html
 
 **Test Cases**
 
@@ -43,6 +43,12 @@ Test run results with Newman
 2.	newman run yourCollectionFile.json -e yourEnvironmentFile.json --reporters='cli,htmlextra'
 3.	See the results in Newman folder in your selected path
 
+![image](https://github.com/user-attachments/assets/ad98f4ea-315d-441c-8b29-6d915a27bc7a)
+
+
 Test run results in git actions
 1. Open https://github.com/gkb67/Github-API-Tests/actions/ and see the test results
 2. Tests are automatically run every day
+
+![image](https://github.com/user-attachments/assets/a3bab36e-cb4e-46ff-a095-75c5418fb6ef)
+
