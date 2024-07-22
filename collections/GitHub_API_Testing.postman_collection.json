@@ -34,7 +34,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{authToken}}",
+								"value": "Bearer {{TOKEN}}",
 								"type": "text",
 								"disabled": true
 							}
@@ -130,7 +130,7 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "token {{authToken}}",
+										"value": "token {{TOKEN}}",
 										"type": "text",
 										"disabled": true
 									},
@@ -187,7 +187,7 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "token {{authToken}}",
+										"value": "token {{TOKEN}}",
 										"type": "text",
 										"disabled": true
 									}
@@ -285,7 +285,7 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "token {{authToken}}",
+										"value": "token {{TOKEN}}",
 										"type": "text",
 										"disabled": true
 									},
@@ -348,7 +348,7 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "token {{authToken}}",
+										"value": "token {{TOKEN}}",
 										"type": "text",
 										"disabled": true
 									}
@@ -392,7 +392,7 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "token {{authToken}}",
+										"value": "token {{TOKEN}}",
 										"type": "text",
 										"disabled": true
 									},
@@ -444,7 +444,7 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "token {{authToken}}",
+										"value": "token {{TOKEN}}",
 										"type": "text",
 										"disabled": true
 									}
@@ -476,7 +476,7 @@
 				"exec": [
 					"pm.request.headers.add({\r",
 					"    key: 'Authorization',\r",
-					"    value: `token ${pm.environment.get(\"authToken\")}`\r",
+					"    value: `token ${pm.environment.get(\"TOKEN\")}`\r",
 					"});"
 				]
 			}
