@@ -27,12 +27,12 @@ Required tools: Postman, npm and newman
 - **Positive tests**
   - Scenario 1 – Verify that users can create Repository with valid name and description
   - Scenario 2 - Verify that users can retrieve all available repositories
-  - Scenario 3 - Verify that users can retrieve details of an existing repository.
+  - Scenario 3 - Verify that users can retrieve details of an existing repository
   - Scenario 4 – Verify that users can update repository details
   - Scenario 5 - Verify that users can delete an existing repository
  
 - **Negative tests**
-  - Scenario 1 - Verify that users cannot create a repository with invalid data.
+  - Scenario 1 - Verify that users cannot create a repository with invalid data
   - Scenario 2 - Verify that users cannot update a non-existent repository
 
 **How to Run Tests**
